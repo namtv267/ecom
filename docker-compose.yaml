@@ -1,0 +1,14 @@
+services:
+  db:
+    image: mysql
+    container_name: ecom
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: ecom
+      MYSQL_USER_PASSWORD: ecom
+      MYSQL_DATABASE: APPLICATION
+    volumes:
+      - ./volume/mysql:/var/lib/mysql
+    ports:
+      - '3306:3306'
