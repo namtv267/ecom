@@ -1,6 +1,6 @@
-package com.auth_service.configs;
+package com.auth.configs;
 
-import com.auth_service.entities.User;
+import com.auth.entities.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 @Data
 @AllArgsConstructor

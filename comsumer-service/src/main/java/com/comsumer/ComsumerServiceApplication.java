@@ -1,13 +1,13 @@
-package com.auth_service;
+package com.comsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AuthServiceApplication {
+public class ComsumerServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AuthServiceApplication.class, args);
+		SpringApplication.run(ComsumerServiceApplication.class, args);
 	}
 
 }

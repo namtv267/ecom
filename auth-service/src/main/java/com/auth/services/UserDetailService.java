@@ -1,8 +1,8 @@
-package com.auth_service.services;
+package com.auth.services;
 
-import com.auth_service.configs.CustomUserDetail;
-import com.auth_service.entities.User;
-import com.auth_service.repositories.UserRepo;
+import com.auth.configs.CustomUserDetail;
+import com.auth.entities.User;
+import com.auth.repositories.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

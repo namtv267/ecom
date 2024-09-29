@@ -1,10 +1,10 @@
-package com.delivery_service;
+package com.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DeliveryServiceApplicationTests {
+class AuthServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

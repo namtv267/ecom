@@ -1,4 +1,4 @@
-package com.auth_service.entities;
+package com.auth.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

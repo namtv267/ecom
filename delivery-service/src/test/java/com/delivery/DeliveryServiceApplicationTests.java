@@ -1,10 +1,10 @@
-package com.gateway_service;
+package com.delivery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GatewayServiceApplicationTests {
+class DeliveryServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
