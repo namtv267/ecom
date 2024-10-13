@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER: namtv
+      POSTGRES_PASSWORD: namtv
+      POSTGRES_DB: APPLICATION
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data/postgres:/var/lib/postgres/data
