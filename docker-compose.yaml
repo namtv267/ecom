@@ -1,14 +1,37 @@
 services:
-  db:
+  db_mysql:
     image: mysql
     container_name: ecom
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: ecom
-      MYSQL_USER_PASSWORD: ecom
+      MYSQL_USER: namtv
+      MYSQL_USER_PASSWORD: namtv
       MYSQL_DATABASE: APPLICATION
     volumes:
       - ./volume/mysql:/var/lib/mysql
     ports:
       - '3306:3306'
+    networks:
+      - ecom
+  db_postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER: namtv
+      POSTGRES_PASSWORD: namtv
+      POSTGRES_DB: APPLICATION
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./volume/postgres:/var/lib/postgres
+    networks:
+      - ecom
+networks:
+  ecom:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.host_binding_ipv4: "127.0.0.2"
+volumes:
+  ecom_volume:
